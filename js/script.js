@@ -25,6 +25,8 @@ function addToErrands() {
 }
 
 function displayErrandList() { 
+    divFeedback.textContent = "";
+
     for (let i = 0; i < arrErrandList.length; i++) {
         const divErrand = document.createElement("div");     
 
