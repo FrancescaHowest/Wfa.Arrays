@@ -10,10 +10,11 @@ function initialize() {
     inpUser = document.querySelector("#input");
     divFeedback = document.querySelector("#feedback");
 
-    arrErrandList = [];
-
     btnArrayResult.addEventListener("click",addToErrands);
-
+    
+    arrErrandList = ["Appel", "Peer"];
+    
+    displayErrandList();
 }
 
 function addToErrands() {
@@ -22,6 +23,7 @@ function addToErrands() {
     arrErrandList[arrErrandList.length] = userInput;
 
     displayErrandList();
+    inpUser.value = "";
 }
 
 function displayErrandList() { 
