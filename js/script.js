@@ -15,3 +15,10 @@ function initialize() {
     btnArrayResult.addEventListener("click",addToErrands);
 
 }
+function addToErrands() {
+    let userInput = inpUser.value;
+
+    arrErrandList[arrErrandList.length] = userInput;
+
+    displayErrandList();
+}
